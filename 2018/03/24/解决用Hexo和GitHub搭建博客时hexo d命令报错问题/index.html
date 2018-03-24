@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="一杯气质水">
 <meta property="og:description" content="报错信息FATAL bash: /dev/tty: No such device or address error: failed to execute prompt script (exit code 1) fatal: could not read Username for &amp;apos;https://github.com&amp;apos;: Invalid argument Error: bash">
 <meta property="og:image" content="https://i.imgur.com/xF4xV3g.png">
-<meta property="og:updated_time" content="2018-03-24T02:18:30.223Z">
+<meta property="og:updated_time" content="2018-03-24T10:10:18.213Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="解决用Hexo和GitHub搭建博客时hexo d命令报错问题">
 <meta name="twitter:description" content="报错信息FATAL bash: /dev/tty: No such device or address error: failed to execute prompt script (exit code 1) fatal: could not read Username for &amp;apos;https://github.com&amp;apos;: Invalid argument Error: bash">
@@ -396,7 +396,7 @@ fatal: could not read Username for &apos;https://github.com&apos;: Invalid argum
 </code></pre><h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><h2 id="配置-config-yml中的deploy："><a href="#配置-config-yml中的deploy：" class="headerlink" title="配置_config.yml中的deploy："></a>配置_config.yml中的deploy：</h2><pre><code>deploy:
  type: git
  repo:git@github.com:your_github_user_name/your_github_user_name.github.io.git
- branch: master1234
+ branch: master
 </code></pre><h2 id="生成-ssh-key"><a href="#生成-ssh-key" class="headerlink" title="生成 ssh key"></a>生成 ssh key</h2><pre><code>$ ssh-keygen -t rsa -C greenovia@qq.com（换成你的邮箱地址）
 </code></pre><p>出现的步骤回车，这样生成的秘钥就在C:\Users\Administrator.ssh</p>
 <p>配置github账户的ssh key，点击右上角New SHH Key，把id_rsa.pub文件将一整串公钥拷贝下来贴到key中，title放空就好</p>
@@ -454,8 +454,8 @@ $ hexo d
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/09/26/REST/" rel="prev" title="REST">
-                REST <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/24/爬取豆瓣top250到数据库/" rel="prev" title="爬取豆瓣top250到数据库">
+                爬取豆瓣top250到数据库 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -528,7 +528,7 @@ $ hexo d
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -550,7 +550,7 @@ $ hexo d
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-count">18</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
