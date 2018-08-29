@@ -94,7 +94,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/05/16/SQL基本语句/index.html">
 <meta property="og:site_name" content="一杯气质水">
 <meta property="og:description" content="增删改查select 列名称 from 表名称select distinct 列名称 from 表名称   insert into 表名称 values(值1，值2，。。。。。。)insert into table_name(列1，列2，。。。)values(值1，值2，。。。。。。)   upate 表名称 set 列名称=新值 where 列名称 = 某值   delete from 表名称">
-<meta property="og:updated_time" content="2017-05-16T15:35:16.072Z">
+<meta property="og:updated_time" content="2018-08-19T12:09:11.016Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SQL基本语句">
 <meta name="twitter:description" content="增删改查select 列名称 from 表名称select distinct 列名称 from 表名称   insert into 表名称 values(值1，值2，。。。。。。)insert into table_name(列1，列2，。。。)values(值1，值2，。。。。。。)   upate 表名称 set 列名称=新值 where 列名称 = 某值   delete from 表名称">
@@ -393,8 +393,8 @@
 <p>ORDER BY 语句<br>ORDER BY 语句用于根据指定的列对结果集进行排序。<br>ORDER BY 语句默认按照升序对记录进行排序。<br>如果您希望按照降序对记录进行排序，可以使用 DESC 关键字。  </p>
 <p><strong>多表联接查询</strong><br>内联接<br>【在where子句中指定联接条件】<br>        select a.name,b.chengji<br>        from a,b<br>        where a.name=b.name<br>说明：查询表a和表b中name字段相等的记录，并显示表a中的name字段和表b中的chengji字段  </p>
 <p>【在from子句中使用join…on】<br>        select a.name,b.chengji<br>        from a inner join b<br>        on (a.name=b.name)<br>说明：查询表a和表b中name字段相等的记录，并显示表a中的name字段和表b中的chengji字段  </p>
-<p>外联接<br>【左外联接查询】<br>        select s.name,c.courseID,c.score<br>        from strdents as s<br>        left outer join score as c<br>        on s.scode=c.strdentID<br>说明：在strdents表和score表中查询满足on条件的行，条件为score表的strdentID与strdents表中的sconde相同  </p>
-<p>【右外联接查询】<br>        elect s.name,c.courseID,c.score<br>        from strdents as s<br>        right outer join score as c<br>        on s.scode=c.strdentID<br>说明：在strdents表和score表中查询满足on条件的行，条件为strdents表中的sconde与score表的strdentID相同</p>
+<p>外联接<br>【左外联接查询】out可以省略<br>        select s.name,c.courseID,c.score<br>        from strdents as s<br>        left outer join score as c<br>        on s.scode=c.strdentID<br>说明：在strdents表和score表中查询满足on条件的行，条件为score表的strdentID与strdents表中的sconde相同  </p>
+<p>【右外联接查询】out可以省略<br>        elect s.name,c.courseID,c.score<br>        from strdents as s<br>        right outer join score as c<br>        on s.scode=c.strdentID<br>说明：在strdents表和score表中查询满足on条件的行，条件为strdents表中的sconde与score表的strdentID相同</p>
 
       
     </div>
