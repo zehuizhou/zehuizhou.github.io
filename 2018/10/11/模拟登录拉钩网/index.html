@@ -94,7 +94,7 @@
 <meta property="og:url" content="http://yoursite.com/2018/10/11/模拟登录拉钩网/index.html">
 <meta property="og:site_name" content="一杯气质水">
 <meta property="og:description" content="# coding:utf-8 import requests import re from bs4 import BeautifulSoup import urllib3 import hashlib urllib3.disable_warnings()  class LoginLgw():  def __init__(self, s):     self.s = s  def getTokenC">
-<meta property="og:updated_time" content="2018-10-11T12:38:32.464Z">
+<meta property="og:updated_time" content="2018-10-17T14:23:03.775Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="模拟登录拉钩网">
 <meta name="twitter:description" content="# coding:utf-8 import requests import re from bs4 import BeautifulSoup import urllib3 import hashlib urllib3.disable_warnings()  class LoginLgw():  def __init__(self, s):     self.s = s  def getTokenC">
@@ -475,8 +475,12 @@ def login(self, user, psw):
     except:
         print(&quot;登录异常信息：%s&quot; % r2.text)
         return None
-</code></pre><p>if <strong>name</strong> == “<strong>main</strong>“:<br>    s = requests.session()<br>    lgw = LoginLgw(s)<br>    lgw.login(“18058409039”, “123456”)</p>
 
+if __name__ == &quot;__main__&quot;:
+    s = requests.session()
+    lgw = LoginLgw(s)
+    lgw.login(&quot;18058409039&quot;, &quot;123456&quot;)
+</code></pre>
       
     </div>
 
@@ -517,6 +521,10 @@ def login(self, user, psw):
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/17/python操作OA/" rel="next" title="python操作OA">
+                <i class="fa fa-chevron-left"></i> python操作OA
+              </a>
             
           </div>
 
@@ -589,7 +597,7 @@ def login(self, user, psw):
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-count">25</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
