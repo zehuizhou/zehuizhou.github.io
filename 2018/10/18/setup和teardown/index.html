@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="网络七层协议," />
+  <meta name="keywords" content="pytest," />
 
 
 
@@ -87,19 +87,17 @@
 
 
 
-<meta name="description" content="OSI是Open System Interconnect的缩写，意为开放式系统互联，具体如下图：">
-<meta name="keywords" content="网络七层协议">
+<meta name="description" content="用例运行级别模块级（setup_module/teardown_module）开始于模块始末，全局的 函数级（setup_function/teardown_function）叧对函数用例生效（不在类中） 类级（setup_class/teardown_class）叧在类中前后运行一次(在类中) 方法级（setup_method/teardown_method）开始于方法始末（在类中） 类里面的（">
+<meta name="keywords" content="pytest">
 <meta property="og:type" content="article">
-<meta property="og:title" content="OSI">
-<meta property="og:url" content="http://yoursite.com/2017/05/11/OSI/index.html">
+<meta property="og:title" content="setup和teardown">
+<meta property="og:url" content="http://yoursite.com/2018/10/18/setup和teardown/index.html">
 <meta property="og:site_name" content="一杯气质水">
-<meta property="og:description" content="OSI是Open System Interconnect的缩写，意为开放式系统互联，具体如下图：">
-<meta property="og:image" content="http://i.imgur.com/4uOJ4xC.jpg">
-<meta property="og:updated_time" content="2017-05-11T14:29:08.957Z">
+<meta property="og:description" content="用例运行级别模块级（setup_module/teardown_module）开始于模块始末，全局的 函数级（setup_function/teardown_function）叧对函数用例生效（不在类中） 类级（setup_class/teardown_class）叧在类中前后运行一次(在类中) 方法级（setup_method/teardown_method）开始于方法始末（在类中） 类里面的（">
+<meta property="og:updated_time" content="2018-10-18T13:36:17.793Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="OSI">
-<meta name="twitter:description" content="OSI是Open System Interconnect的缩写，意为开放式系统互联，具体如下图：">
-<meta name="twitter:image" content="http://i.imgur.com/4uOJ4xC.jpg">
+<meta name="twitter:title" content="setup和teardown">
+<meta name="twitter:description" content="用例运行级别模块级（setup_module/teardown_module）开始于模块始末，全局的 函数级（setup_function/teardown_function）叧对函数用例生效（不在类中） 类级（setup_class/teardown_class）叧在类中前后运行一次(在类中) 方法级（setup_method/teardown_method）开始于方法始末（在类中） 类里面的（">
 
 
 
@@ -127,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/05/11/OSI/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/18/setup和teardown/"/>
 
 
 
 
 
-  <title> OSI | 一杯气质水 </title>
+  <title> setup和teardown | 一杯气质水 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -282,7 +280,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/11/OSI/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/18/setup和teardown/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="July">
@@ -303,7 +301,7 @@
             
             
               
-                OSI
+                setup和teardown
               
             
           </h1>
@@ -318,8 +316,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-11T22:16:39+08:00">
-                2017-05-11
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-18T21:01:39+08:00">
+                2018-10-18
               </time>
             
 
@@ -341,8 +339,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/计算机网络/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机网络</span>
+                  <a href="/categories/pytest/" itemprop="url" rel="index">
+                    <span itemprop="name">pytest</span>
                   </a>
                 </span>
 
@@ -358,7 +356,7 @@
 
           
           
-             <span id="/2017/05/11/OSI/" class="leancloud_visitors" data-flag-title="OSI">
+             <span id="/2018/10/18/setup和teardown/" class="leancloud_visitors" data-flag-title="setup和teardown">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -387,7 +385,97 @@
       
 
       
-        <p><strong>OSI是Open System Interconnect的缩写，意为开放式系统互联，具体如下图：</strong><br><img src="http://i.imgur.com/4uOJ4xC.jpg" alt=""></p>
+        <h2 id="用例运行级别"><a href="#用例运行级别" class="headerlink" title="用例运行级别"></a>用例运行级别</h2><p>模块级（setup_module/teardown_module）开始于模块始末，<br>全局的</p>
+<p>函数级（setup_function/teardown_function）叧对函数用例生<br>效（不在类中）</p>
+<p>类级（setup_class/teardown_class）叧在类中前后运行一次(在<br>类中)</p>
+<p>方法级（setup_method/teardown_method）开始于方法始末<br>（在类中）</p>
+<p>类里面的（setup/teardown）运行在调用方法的前后</p>
+<p>pytest 框架支持函数呾类两种用例方式，先看函数里面的前置不后<br>置用法：<br>setup_function/teardown_function 每个用例开始和结束调用一<br>次</p>
+<h2 id="模块级例子："><a href="#模块级例子：" class="headerlink" title="模块级例子："></a>模块级例子：</h2><pre><code># test_fixt.py
+# coding:utf-8
+import pytest
+
+def setup_module(): 
+    print(&quot;setup_module：整个.py 模块只执行一次&quot;) 
+    print(&quot;比如：所有用例开始前只打开一次浏览器&quot;) 
+
+def teardown_module(): 
+    print(&quot;teardown_module：整个.py 模块只执行一次&quot;) 
+    print(&quot;比如：所有用例结束只最后关闭浏览器&quot;) 
+
+def test_one(): 
+    print(&quot;正在执行----test_one&quot;) 
+    x = &quot;this&quot; 
+    assert &apos;h&apos; in 
+
+def test_two(): 
+    print(&quot;正在执行----test_two&quot;) 
+    x = &quot;hello&quot; 
+    assert hasattr(x, &apos;check&apos;) 
+
+if __name__ == &quot;__main__&quot;: 
+    pytest.main([&quot;-s&quot;, &quot;test_fixt.py&quot;])
+</code></pre><p>从运行结果可以看到 setup_module 呾 teardown_module 叧执行了<br>一次<br>test_fixt.py setup_module：整个.py 模块叧执行一次<br>比如：所有用例开始前叧打开一次浏览器</p>
+<h2 id="函数级例子："><a href="#函数级例子：" class="headerlink" title="函数级例子："></a>函数级例子：</h2><p>setup_module 是所有用例开始前叧执行一次，teardown_module 是<br>所有用例结束后叧执行一次</p>
+<pre><code># test_fixt.py
+# coding:utf-8
+import pytest
+
+def setup_function(): 
+    print(&quot;setup_function：每个用例开始前都会执行&quot;) 
+
+def teardown_function(): 
+    print(&quot;teardown_function：每个用例结束后都会执行&quot;)
+
+def test_one(): 
+    print(&quot;正在执行----test_one&quot;) 
+    x = &quot;this&quot; 
+    assert &apos;h&apos; in x 
+
+def test_two(): 
+    print(&quot;正在执行----test_two&quot;) 
+    x = &quot;hello&quot; 
+    assert hasattr(x, &apos;check&apos;) 
+</code></pre><h2 id="类级别例子："><a href="#类级别例子：" class="headerlink" title="类级别例子："></a>类级别例子：</h2><pre><code>class TestCase(): 
+
+    def setup(self): 
+        print(&quot;setup: 每个用例开始前执行&quot;) 
+
+    def teardown(self): 
+         print(&quot;teardown: 每个用例结束后执行&quot;) 
+
+    def setup_class(self): 
+         print(&quot;setup_class：所有用例执行之前&quot;) 
+
+    def teardown_class(self): 
+         print(&quot;teardown_class：所有用例执行之前&quot;) 
+
+def setup_method(self): 
+     print(&quot;setup_method: 每个用例开始前执行&quot;) 
+
+def teardown_method(self): 
+     print(&quot;teardown_method: 每个用例结束后执行&quot;) 
+
+def test_one(self)：
+    print(&quot;正在执行----test_one&quot;) 
+     x = &quot;this&quot; 
+     assert &apos;h&apos; in x
+
+def test_two(self): 
+    print(&quot;正在执行----test_two&quot;) 
+     x = &quot;hello&quot; 
+     assert hasattr(x, &apos;check&apos;) 
+
+def test_three(self): 
+     print(&quot;正在执行----test_three&quot;) 
+     a = &quot;hello&quot; 
+     b = &quot;hello world&quot; 
+     assert a in b
+
+if __name__ == &quot;__main__&quot;: 
+     pytest.main([&quot;-s&quot;, &quot;test_fixtclass.py&quot;])
+</code></pre><p>从结果看出，运行的优先级：setup_class&gt;setup_method&gt;<br>setup&gt;用例&gt;teardown&gt;teardown_method&gt;teardown_class</p>
+<p>如果一个.py 的文件里面既有函数用例又有类呾方法用例,setup_module/teardown_module 的优先级是最大的，然后函数里面用到的 setup_function/teardown_function不类里面的 setup_class/teardown_class 互丌干涉</p>
 
       
     </div>
@@ -417,7 +505,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/网络七层协议/" rel="tag"># 网络七层协议</a>
+            <a href="/tags/pytest/" rel="tag"># pytest</a>
           
         </div>
       
@@ -430,18 +518,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/05/13/数据库基础知识回顾/" rel="next" title="数据库基础知识">
-                <i class="fa fa-chevron-left"></i> 数据库基础知识
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/05/08/APP测试/" rel="prev" title="APP测试">
-                APP测试 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/10/18/pytest框架设计/" rel="prev" title="pytest框架设计">
+                pytest框架设计 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -489,8 +573,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/touxiang.jpg"
@@ -590,6 +683,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#用例运行级别"><span class="nav-number">1.</span> <span class="nav-text">用例运行级别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模块级例子："><span class="nav-number">2.</span> <span class="nav-text">模块级例子：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数级例子："><span class="nav-number">3.</span> <span class="nav-text">函数级例子：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类级别例子："><span class="nav-number">4.</span> <span class="nav-text">类级别例子：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
