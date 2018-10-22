@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="shell," />
+  <meta name="keywords" content="pytest," />
 
 
 
@@ -87,17 +87,17 @@
 
 
 
-<meta name="description" content="先写个非常非常简单的脚本打开终端，依次输入以下语句：echo ‘#!/bin/bash’ &amp;gt; test.shecho ‘echo “hello world”‘ &amp;gt;&amp;gt; test.sh这样一个脚本就写好了，sh test.sh没出错的话应该输出hello world   接下来进行实战演练，先说需求，以root用户登录，为每个sd硬盘在桌面创建一个文件夹，文件夹以sd的形式命名，文件">
-<meta name="keywords" content="shell">
+<meta name="description" content="firture相对于setup和teardown来说应该有以下几点优势： 命名方式灵活，不局限于setup和teardown这几个命名 conftest.py配置里可以实现数据共享，不需要import就能自动找到一些配置 scope=”module” 可以实现多个.py 跨文件共享前置 scope=”session” 以实现多个.py 跨文件使用一个session来完成多个用例  fixture(">
+<meta name="keywords" content="pytest">
 <meta property="og:type" content="article">
-<meta property="og:title" content="shell实战演练">
-<meta property="og:url" content="http://yoursite.com/2016/08/31/shell实战演练/index.html">
+<meta property="og:title" content="fixture">
+<meta property="og:url" content="http://yoursite.com/2018/10/21/fixture/index.html">
 <meta property="og:site_name" content="一杯气质水">
-<meta property="og:description" content="先写个非常非常简单的脚本打开终端，依次输入以下语句：echo ‘#!/bin/bash’ &amp;gt; test.shecho ‘echo “hello world”‘ &amp;gt;&amp;gt; test.sh这样一个脚本就写好了，sh test.sh没出错的话应该输出hello world   接下来进行实战演练，先说需求，以root用户登录，为每个sd硬盘在桌面创建一个文件夹，文件夹以sd的形式命名，文件">
-<meta property="og:updated_time" content="2017-04-28T12:38:26.265Z">
+<meta property="og:description" content="firture相对于setup和teardown来说应该有以下几点优势： 命名方式灵活，不局限于setup和teardown这几个命名 conftest.py配置里可以实现数据共享，不需要import就能自动找到一些配置 scope=”module” 可以实现多个.py 跨文件共享前置 scope=”session” 以实现多个.py 跨文件使用一个session来完成多个用例  fixture(">
+<meta property="og:updated_time" content="2018-10-22T13:10:48.857Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="shell实战演练">
-<meta name="twitter:description" content="先写个非常非常简单的脚本打开终端，依次输入以下语句：echo ‘#!/bin/bash’ &amp;gt; test.shecho ‘echo “hello world”‘ &amp;gt;&amp;gt; test.sh这样一个脚本就写好了，sh test.sh没出错的话应该输出hello world   接下来进行实战演练，先说需求，以root用户登录，为每个sd硬盘在桌面创建一个文件夹，文件夹以sd的形式命名，文件">
+<meta name="twitter:title" content="fixture">
+<meta name="twitter:description" content="firture相对于setup和teardown来说应该有以下几点优势： 命名方式灵活，不局限于setup和teardown这几个命名 conftest.py配置里可以实现数据共享，不需要import就能自动找到一些配置 scope=”module” 可以实现多个.py 跨文件共享前置 scope=”session” 以实现多个.py 跨文件使用一个session来完成多个用例  fixture(">
 
 
 
@@ -125,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/08/31/shell实战演练/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/21/fixture/"/>
 
 
 
 
 
-  <title> shell实战演练 | 一杯气质水 </title>
+  <title> fixture | 一杯气质水 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -280,7 +280,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/31/shell实战演练/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/21/fixture/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="July">
@@ -301,7 +301,7 @@
             
             
               
-                shell实战演练
+                fixture
               
             
           </h1>
@@ -316,8 +316,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-31T21:08:39+08:00">
-                2016-08-31
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-21T20:01:39+08:00">
+                2018-10-21
               </time>
             
 
@@ -339,8 +339,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/shell/" itemprop="url" rel="index">
-                    <span itemprop="name">shell</span>
+                  <a href="/categories/pytest/" itemprop="url" rel="index">
+                    <span itemprop="name">pytest</span>
                   </a>
                 </span>
 
@@ -356,7 +356,7 @@
 
           
           
-             <span id="/2016/08/31/shell实战演练/" class="leancloud_visitors" data-flag-title="shell实战演练">
+             <span id="/2018/10/21/fixture/" class="leancloud_visitors" data-flag-title="fixture">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -385,24 +385,43 @@
       
 
       
-        <p><b>先写个非常非常简单的脚本</b><br>打开终端，依次输入以下语句：<br>echo ‘#!/bin/bash’ &gt; test.sh<br>echo ‘echo “hello world”‘ &gt;&gt; test.sh<br>这样一个脚本就写好了，<br>sh test.sh<br>没出错的话应该输出<br>hello world  </p>
-<p><b>接下来进行实战演练，先说需求，以root用户登录，为每个sd硬盘在桌面创建一个文件夹，文件夹以sd的形式命名，文件夹中包含一个文件，命名是date命令获取的时间<br>tips: date的命令为”date +%Y.%m.%d_%H:%M:%S”<br>文件中保存着硬盘的大小值<br></b></p>
-<pre><code>#!/bin/bash
-disk_detail_list=$(fdisk -l 2&gt; /dev/null | grep -i &quot;disk /dev/sd&quot;)
-disk_name_list=`echo $disk_detail_list | awk &apos;{print $2}&apos; | awk -F/ &apos;{print $3}&apos;| tr -d [:]`
-disk_size_list=$(echo $disk_detail_list| awk &apos;{print $3&quot; &quot;$4}&apos;)
-disk_num=$(echo $disk_detail_list|wc -l)
-for ((i=1;$i&lt;=$disk_num;i++))
-do
-    #disk_name=$(echo $disk_name_list| sed -n -e &quot;${i}p&quot;)
-    disk_name=$(echo $disk_name_list| head -n $i | tail -n 1)
-    #disk_size=$(echo $disk_size_list| awk -F, &apos;{if (NR == &quot;&apos;&quot;$i&quot;&apos;&quot;) print $1}&apos;)
-    disk_size=$(echo $disk_size_list| awk -F, &quot;{if (NR == $i) print \$1}&quot;)
-    mkdir /root/Desktop/$disk_name
-    file_name=$(date +%Y.%m.%d_%H:%M:%S)
-    echo &quot;$disk_size&quot; &gt; /root/Desktop/$disk_name/$file_name
-done
-</code></pre>
+        <h2 id="firture相对于setup和teardown来说应该有以下几点优势："><a href="#firture相对于setup和teardown来说应该有以下几点优势：" class="headerlink" title="firture相对于setup和teardown来说应该有以下几点优势："></a>firture相对于setup和teardown来说应该有以下几点优势：</h2><ul>
+<li>命名方式灵活，不局限于setup和teardown这几个命名</li>
+<li>conftest.py配置里可以实现数据共享，不需要import就能自动找到一些配置</li>
+<li>scope=”module” 可以实现多个.py 跨文件共享前置</li>
+<li>scope=”session” 以实现多个.py 跨文件使用一个session来完成多个用例</li>
+</ul>
+<h2 id="fixture-scope-”function”-params-None-autouse-False-ids-None-name-None"><a href="#fixture-scope-”function”-params-None-autouse-False-ids-None-name-None" class="headerlink" title="fixture(scope=”function”,params=None,autouse=False,ids=None,name=None):"></a>fixture(scope=”function”,params=None,autouse=False,ids=None,name=None):</h2><ul>
+<li>scope：有四个级别参数 “function” (默认，对函数有效,scope=”module”), “class”,”module”or “session”<ul>
+<li>module作用是整个.第一次调用前执行一次,yield可以执行teardown,如果其中一个用例出现异常，不影响yield后面的teardown执行,运行结果互不影响，并且全部用例执行完之后，yield呼唤teardown操作</li>
+</ul>
+</li>
+<li>params：一个可选的参数列表，它将导致多个参数调用fixture 功能呾所有测试使用它</li>
+<li>autouse：如果为True，则为所有测试激活fixture func可以看到它。 如果为False（默讣值）则显式需要参考来激活fixture</li>
+<li>ids：每个字符串id的列表，每个字符串对应于params，这样他们就是测试ID的一部分。 如果没有提供ID它们将从params 自动生成</li>
+<li>name：fixture的名称。 返默讣为装饰函数的名称。 如果fixture 在定义它的同一模块中使用，夹具的功能名称将被请求夹具的功能arg遮蔽;解决返个问题的一种方法是将装饰函数命名</li>
+</ul>
+<h2 id="实现场景"><a href="#实现场景" class="headerlink" title="实现场景"></a>实现场景</h2><p>用例 1 需要先登录，用例 2 丌需要登录，用例 3 需要<br>先登录</p>
+<pre><code>@pytest.fixture() 
+def login(): 
+     print(&quot;输入账号，密码先登录&quot;) 
+
+def test_s1(login): 
+     print(&quot;用例 1：登录之后其它动作 111&quot;) 
+
+def test_s2(): # 不传 login
+    print(&quot;用例 2：不需要登录，操作 222&quot;) 
+
+def test_s3(login): 
+     print(&quot;用例 3：登录之后其它动作 333&quot;) 
+
+if __name__ == &quot;__main__&quot;: 
+     pytest.main([&quot;-s&quot;, &quot;test_fix.py&quot;])
+</code></pre><h2 id="addfinalizer终结函数"><a href="#addfinalizer终结函数" class="headerlink" title="addfinalizer终结函数"></a>addfinalizer终结函数</h2><ul>
+<li>除了yield可以实现teardown,在request-context对象中注册addfinalizer方法也可以实现终结函数。</li>
+<li>yield和addfinalizer方法都是在测试完成后呼叫相应的代码。但是addfinalizer不同的是他可以注册多个终结函数。这些终结方法总是会被执行，无论在之前的setup code有没有抛出错误。这个方法对于正确关闭所有的fixture创建的资源非常便利，即使其一在创建或获取时失败.</li>
+</ul>
+
       
     </div>
 
@@ -431,7 +450,7 @@ done
       
         <div class="post-tags">
           
-            <a href="/tags/shell/" rel="tag"># shell</a>
+            <a href="/tags/pytest/" rel="tag"># pytest</a>
           
         </div>
       
@@ -444,8 +463,8 @@ done
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/18/HTTPS/" rel="next" title="安全http(https)">
-                <i class="fa fa-chevron-left"></i> 安全http(https)
+              <a href="/2018/10/21/conftest文件配置/" rel="next" title="conftest文件配置">
+                <i class="fa fa-chevron-left"></i> conftest文件配置
               </a>
             
           </div>
@@ -454,8 +473,8 @@ done
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/08/25/vim/" rel="prev" title="vim">
-                vim <i class="fa fa-chevron-right"></i>
+              <a href="/2018/10/18/pytest框架设计/" rel="prev" title="pytest框架设计">
+                pytest框架设计 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -503,8 +522,17 @@ done
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/touxiang.jpg"
@@ -604,6 +632,22 @@ done
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#firture相对于setup和teardown来说应该有以下几点优势："><span class="nav-number">1.</span> <span class="nav-text">firture相对于setup和teardown来说应该有以下几点优势：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fixture-scope-”function”-params-None-autouse-False-ids-None-name-None"><span class="nav-number">2.</span> <span class="nav-text">fixture(scope=”function”,params=None,autouse=False,ids=None,name=None):</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现场景"><span class="nav-number">3.</span> <span class="nav-text">实现场景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#addfinalizer终结函数"><span class="nav-number">4.</span> <span class="nav-text">addfinalizer终结函数</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
