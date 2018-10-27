@@ -87,17 +87,17 @@
 
 
 
-<meta name="description" content="前言： 当用例 a 失败的时候，如果用例 b 呾用例 c 都是依赖于第一个用例的结果，那可以直接跳过用例 b 呾 c 的测试，直接给他标记失败 xfail用到的场景，登录是第一个用例，登录乊后的操作 b 是第二个用例，登录乊后操作 c 是第三个用例，很明显三个用例都会走到登录。如果登录都失败了，那后面 2 个用例就没测试必要了，直接跳过，并且标记为失败用例，返样可以节省用例时间。 例子： 思路">
+<meta name="description" content="前言： 当用例a失败的时候，如果用例b和用例c都是依赖于第一个用例的结果，那可以直接跳过用例b和c的测试，直接给他标记失败xfail。用到的场景，登录是第一个用例，登录后的操作b是第二个用例，登录后操作c是第三个用例，很明显三个用例都会走到登录。如果登录都失败了，那后面2个用例就没测试必要了，直接跳过，并且标记为失败用例，返样可以节省用例时间。 例子： 思路  把登录写为前置操作 对登录的账户和密">
 <meta name="keywords" content="pytest">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用例a失败，跳过测试用例b和c并标记失败xfail">
 <meta property="og:url" content="http://yoursite.com/2018/10/25/用例a失败，跳过测试用例b和c并标记失败xfail/index.html">
 <meta property="og:site_name" content="一杯气质水">
-<meta property="og:description" content="前言： 当用例 a 失败的时候，如果用例 b 呾用例 c 都是依赖于第一个用例的结果，那可以直接跳过用例 b 呾 c 的测试，直接给他标记失败 xfail用到的场景，登录是第一个用例，登录乊后的操作 b 是第二个用例，登录乊后操作 c 是第三个用例，很明显三个用例都会走到登录。如果登录都失败了，那后面 2 个用例就没测试必要了，直接跳过，并且标记为失败用例，返样可以节省用例时间。 例子： 思路">
-<meta property="og:updated_time" content="2018-10-25T15:30:48.356Z">
+<meta property="og:description" content="前言： 当用例a失败的时候，如果用例b和用例c都是依赖于第一个用例的结果，那可以直接跳过用例b和c的测试，直接给他标记失败xfail。用到的场景，登录是第一个用例，登录后的操作b是第二个用例，登录后操作c是第三个用例，很明显三个用例都会走到登录。如果登录都失败了，那后面2个用例就没测试必要了，直接跳过，并且标记为失败用例，返样可以节省用例时间。 例子： 思路  把登录写为前置操作 对登录的账户和密">
+<meta property="og:updated_time" content="2018-10-27T14:07:10.517Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用例a失败，跳过测试用例b和c并标记失败xfail">
-<meta name="twitter:description" content="前言： 当用例 a 失败的时候，如果用例 b 呾用例 c 都是依赖于第一个用例的结果，那可以直接跳过用例 b 呾 c 的测试，直接给他标记失败 xfail用到的场景，登录是第一个用例，登录乊后的操作 b 是第二个用例，登录乊后操作 c 是第三个用例，很明显三个用例都会走到登录。如果登录都失败了，那后面 2 个用例就没测试必要了，直接跳过，并且标记为失败用例，返样可以节省用例时间。 例子： 思路">
+<meta name="twitter:description" content="前言： 当用例a失败的时候，如果用例b和用例c都是依赖于第一个用例的结果，那可以直接跳过用例b和c的测试，直接给他标记失败xfail。用到的场景，登录是第一个用例，登录后的操作b是第二个用例，登录后操作c是第三个用例，很明显三个用例都会走到登录。如果登录都失败了，那后面2个用例就没测试必要了，直接跳过，并且标记为失败用例，返样可以节省用例时间。 例子： 思路  把登录写为前置操作 对登录的账户和密">
 
 
 
@@ -386,7 +386,7 @@
 
       
         <p><strong>前言：</strong></p>
-<p>当用例 a 失败的时候，如果用例 b 呾用例 c 都是依赖于第一个用例的结果，那可以直接跳过用例 b 呾 c 的测试，直接给他标记失败 xfail用到的场景，登录是第一个用例，登录乊后的操作 b 是第二个用例，登录乊后操作 c 是第三个用例，很明显三个用例都会走到登录。如果登录都失败了，那后面 2 个用例就没测试必要了，直接跳过，并且标记为失败用例，返样可以节省用例时间。</p>
+<p>当用例a失败的时候，如果用例b和用例c都是依赖于第一个用例的结果，那可以直接跳过用例b和c的测试，直接给他标记失败xfail。用到的场景，登录是第一个用例，登录后的操作b是第二个用例，登录后操作c是第三个用例，很明显三个用例都会走到登录。如果登录都失败了，那后面2个用例就没测试必要了，直接跳过，并且标记为失败用例，返样可以节省用例时间。</p>
 <p><strong>例子：</strong></p>
 <p>思路</p>
 <ol>
@@ -479,6 +479,10 @@ if __name__ == &quot;__main__&quot;:
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/10/27/函数传参/" rel="next" title="函数传参">
+                <i class="fa fa-chevron-left"></i> 函数传参
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
@@ -550,7 +554,7 @@ if __name__ == &quot;__main__&quot;:
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">34</span>
+                <span class="site-state-item-count">35</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

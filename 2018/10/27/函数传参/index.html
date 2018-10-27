@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="一杯气质水" />
+  <meta name="keywords" content="pytest," />
 
 
 
@@ -87,15 +87,17 @@
 
 
 
-<meta name="description" content="学习笔记，方便回顾">
-<meta property="og:type" content="website">
-<meta property="og:title" content="一杯气质水">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+<meta name="description" content="前言： 为了提高代码的复用性，我们在写用例的时候，会用到函数，然后丌同的用例去调用返个函数。比如登录操作，大部分的用例都会先登录，那就需要把登录单独抽出来写个函数，其它用例全部的调用返个登录函数就行。但是登录的账号丌能写死，有时候我想用账号1去登录，执行用例1，用账号2去登录执行用例2，所以需要对函数传参。 登录函数传参： 把登录单独成立，写一个函数，传2个参数user和psw，写用例的时候调用登">
+<meta name="keywords" content="pytest">
+<meta property="og:type" content="article">
+<meta property="og:title" content="函数传参">
+<meta property="og:url" content="http://yoursite.com/2018/10/27/函数传参/index.html">
 <meta property="og:site_name" content="一杯气质水">
-<meta property="og:description" content="学习笔记，方便回顾">
+<meta property="og:description" content="前言： 为了提高代码的复用性，我们在写用例的时候，会用到函数，然后丌同的用例去调用返个函数。比如登录操作，大部分的用例都会先登录，那就需要把登录单独抽出来写个函数，其它用例全部的调用返个登录函数就行。但是登录的账号丌能写死，有时候我想用账号1去登录，执行用例1，用账号2去登录执行用例2，所以需要对函数传参。 登录函数传参： 把登录单独成立，写一个函数，传2个参数user和psw，写用例的时候调用登">
+<meta property="og:updated_time" content="2018-10-27T14:05:43.134Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一杯气质水">
-<meta name="twitter:description" content="学习笔记，方便回顾">
+<meta name="twitter:title" content="函数传参">
+<meta name="twitter:description" content="前言： 为了提高代码的复用性，我们在写用例的时候，会用到函数，然后丌同的用例去调用返个函数。比如登录操作，大部分的用例都会先登录，那就需要把登录单独抽出来写个函数，其它用例全部的调用返个登录函数就行。但是登录的账号丌能写死，有时候我想用账号1去登录，执行用例1，用账号2去登录执行用例2，所以需要对函数传参。 登录函数传参： 把登录单独成立，写一个函数，传2个参数user和psw，写用例的时候调用登">
 
 
 
@@ -123,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2017/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/27/函数传参/"/>
 
 
 
 
 
-  <title> 归档 | 一杯气质水 </title>
+  <title> 函数传参 | 一杯气质水 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -154,7 +156,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -268,328 +270,309 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-    <span class="archive-page-counter">
-      
-      
-       
-      
-      OK! 目前共计 35 篇日志。 继续努力。
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/27/函数传参/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="July">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="一杯气质水">
     </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                函数传参
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-27T22:05:39+08:00">
+                2018-10-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/pytest/" itemprop="url" rel="index">
+                    <span itemprop="name">pytest</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/10/27/函数传参/" class="leancloud_visitors" data-flag-title="函数传参">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+		  
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
-      
 
+      
+        <p><strong>前言：</strong></p>
+<p>为了提高代码的复用性，我们在写用例的时候，会用到函数，然后<br>丌同的用例去调用返个函数。比如登录操作，大部分的用例都会先登录，<br>那就需要把登录单独抽出来写个函数，其它用例全部的调用返个登录函<br>数就行。<br>但是登录的账号丌能写死，有时候我想用账号1去登录，执行用例1，用账号2去登录执行用例2，所以需要对函数传参。</p>
+<p><strong>登录函数传参：</strong></p>
+<p>把登录单独成立，写一个函数，传2个参数user和psw，写用例的时候调用登录函数，输入几组user，psw参数化登录用例。<br>测试用例传参需要用装饰器@pytest.mark.parametrize，里面写2个参数</p>
+<ul>
+<li>第一个参数是字符串，多个参数中间用逗号隔开</li>
+<li><p>第二个参数是list，多组数据用元祖类型</p>
+<pre><code># test_01.py
+# coding:utf-8
+import pytest
+
+# 测试登录数据
+test_login_data = [(&quot;admin&quot;, &quot;111111&quot;), (&quot;admin&quot;,&quot;&quot;)]
+
+def login(user, psw):
+    &apos;&apos;&apos;普通登录函数&apos;&apos;&apos;
+    print(&quot;登录账户：%s&quot; % user)
+    print(&quot;登录密码：%s&quot; % psw)
+    if psw:
+        return True
+    else:
+        return False
+
+@pytest.mark.parametrize(&quot;user, psw&quot;, test_login_data)
+def test_login(user, psw):
+    &apos;&apos;&apos;登录用例&apos;&apos;&apos;
+    result = login(user, psw)
+    assert result == True, &quot;失败原因：密码为空&quot;
+
+if __name__ == &quot;__main__&quot;:
+    pytest.main([&quot;-s&quot;, &quot;test_01.py&quot;])
+</code></pre></li>
+</ul>
+<p><strong>request参数：</strong></p>
+<p>如果想把登录操作放到前置操作里，也就是用到@pytest.fixture装饰器，传参就用默认的request参数<br>user = request.param返一步是接收传入的参数，本案例是传一个参数情况</p>
+<pre><code># test_02.py
+# coding:utf-8
+import pytest
+test_user_data = [&quot;admin1&quot;, &quot;admin2&quot;]
+
+@pytest.fixture(scope=&quot;module&quot;)
+def login(request):
+    user = request.param
+    print(&quot;登录账户：%s&quot;%user)
+    return user
+
+@pytest.mark.parametrize(&quot;login&quot;, test_user_data, indirect=True)
+def test_login(login):
+    &apos;&apos;&apos;登录用例&apos;&apos;&apos;
+    a = login
+    print(&quot;测试用例中login的返回值：%s&quot;%a)
+    assert a != &quot;&quot;
+
+if __name__ == &quot;__main__&quot;:
+    pytest.main([&quot;-s&quot;, &quot;test_02.py&quot;])
+</code></pre><p>添加indirect=True参数是为了把login当成一个函数去执行，而不是一个参数</p>
+<p><strong>request传2个参数</strong></p>
+<p>如果用到@pytest.fixture，里面用2个参数情况，可以把多个参数用一个字典去存储，返样最终还是只传一个参数<br>不同的参数再从字典里面取对应key值就行，如：user = request.param[“user”]</p>
+<pre><code># test_03.py
+# coding:utf-8
+import pytest
+# coding:utf-8
+import pytest
+
+# 测试账号数据
+test_user_data = [{&quot;user&quot;:&quot;admin1&quot;, &quot;psw&quot;: &quot;111111&quot;}, {&quot;user&quot;:&quot;admin1&quot;, &quot;psw&quot;: &quot;&quot;}]
+
+@pytest.fixture(scope=&quot;module&quot;)
+def login(request):
+    user = request.param[&quot;user&quot;]
+    psw = request.param[&quot;psw&quot;]
+    print(&quot;登录账户：%s&quot;% user)
+    print(&quot;登录密码：%s&quot;% psw)
+    if psw:
+        return True
+    else:
+        return False
+
+# indirect=True声明login是个函数
+@pytest.mark.parametrize(&quot;login&quot;, test_user_data, indirect=True)
+def test_login(login):
+    &apos;&apos;&apos;登录用例&apos;&apos;&apos;
+    a = login
+    print(&quot;测试用例中login的返回值：%s&quot;%a)
+    assert a,&quot;失败原因：密码为空&quot;
+
+if __name__ == &quot;__main__&quot;:
+    pytest.main([&quot;-s&quot;, &quot;test_02.py&quot;])
+</code></pre><p>如果要用到login里面的返回值，def test_login(login)时，传入login参数，函数返回值就是login了</p>
+<p><strong>多个fixture</strong></p>
+<p>用例上面是可以同时放多个fixture的，也就是多个前置操作，可以支持装饰器叠加，使用parametrize装饰器叠加时，用例组合是2个参数个数相乘</p>
+<pre><code># test_04.py
+# coding:utf-8
+import pytest
+
+# 测试账号数据
+test_user = [&quot;admin1&quot;, &quot;admin2&quot;]
+test_psw = [&quot;11111&quot;, &quot;22222&quot;]
+
+@pytest.fixture(scope=&quot;module&quot;) 
+def input_user(request): 
+    user = request.param
+    print(&quot;登录账户：%s&quot; % user) 
+    return user
+
+@pytest.fixture(scope=&quot;module&quot;)
+def input_psw(request): 
+    psw = request.param
+    print(&quot;登录密码：%s&quot; % psw) 
+    return psw
+
+@pytest.mark.parametrize(&quot;input_user&quot;, test_user, indirect=True)
+def test_login(input_user, input_psw):
+    &apos;&apos;&apos;登录用例&apos;&apos;&apos; 
+    a = input_user
+    b = input_psw
+    print(&quot;测试数据 a-&gt; %s， b-&gt; %s&quot; % (a,b))
+    assert b
+
+if __name__ == &quot;__main__&quot;: 
+    pytest.main([&quot;-s&quot;, &quot;test_04.py&quot;])
+</code></pre>
+      
+    </div>
+
+    <div>
       
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/pytest/" rel="tag"># pytest</a>
+          
         </div>
       
+
+      
+        
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          <span class="post-nav-divider"></span>
 
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/26/REST/" itemprop="url">
-              
-                <span itemprop="name">REST</span>
-              
-            </a>
-        
-      </h1>
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/25/用例a失败，跳过测试用例b和c并标记失败xfail/" rel="prev" title="用例a失败，跳过测试用例b和c并标记失败xfail">
+                用例a失败，跳过测试用例b和c并标记失败xfail <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-26T19:01:39+08:00"
-              content="2017-09-26" >
-          09-26
-        </time>
-      </div>
-
-    </header>
+      
+      
+    </footer>
   </article>
 
 
 
-    
-
+    <div class="post-spread">
       
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/06/13/Robotframework安装/" itemprop="url">
-              
-                <span itemprop="name">Robotframework安装</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-06-13T21:01:39+08:00"
-              content="2017-06-13" >
-          06-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/16/SQL基本语句/" itemprop="url">
-              
-                <span itemprop="name">SQL基本语句</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-16T22:12:39+08:00"
-              content="2017-05-16" >
-          05-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/16/JMeter/" itemprop="url">
-              
-                <span itemprop="name">JMeter</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-16T22:12:39+08:00"
-              content="2017-05-16" >
-          05-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/14/接口测试/" itemprop="url">
-              
-                <span itemprop="name">接口测试</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-14T22:54:39+08:00"
-              content="2017-05-14" >
-          05-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/13/数据库基础知识回顾/" itemprop="url">
-              
-                <span itemprop="name">数据库基础知识</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-13T21:01:39+08:00"
-              content="2017-05-13" >
-          05-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/11/OSI/" itemprop="url">
-              
-                <span itemprop="name">OSI</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-11T22:16:39+08:00"
-              content="2017-05-11" >
-          05-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/08/APP测试/" itemprop="url">
-              
-                <span itemprop="name">APP测试</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-08T23:16:39+08:00"
-              content="2017-05-08" >
-          05-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/2017/page/2/">2</a><a class="extend next" rel="next" href="/archives/2017/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
+    </div>
+  </div>
 
 
           </div>
@@ -597,6 +580,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -843,11 +830,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
 
 
   
