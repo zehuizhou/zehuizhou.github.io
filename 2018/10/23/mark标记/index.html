@@ -94,7 +94,7 @@
 <meta property="og:url" content="http://yoursite.com/2018/10/23/mark标记/index.html">
 <meta property="og:site_name" content="一杯气质水">
 <meta property="og:description" content="前言： pytest可以支持自定义标记，自定义标记可以把一个web项目划分多个模块，然后指定模块名称执行。app自动化的时候，如果想Android和ios公用一套代码时，也可以使用标记功能，标明哪些是Android用例，哪些是ios用例，运行的时候指定mark名称。 mark标记： import pytest  @pytest.mark.webtest def test_send_http():">
-<meta property="og:updated_time" content="2018-10-23T14:32:52.542Z">
+<meta property="og:updated_time" content="2018-11-24T11:59:08.295Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mark标记">
 <meta name="twitter:description" content="前言： pytest可以支持自定义标记，自定义标记可以把一个web项目划分多个模块，然后指定模块名称执行。app自动化的时候，如果想Android和ios公用一套代码时，也可以使用标记功能，标明哪些是Android用例，哪些是ios用例，运行的时候指定mark名称。 mark标记： import pytest  @pytest.mark.webtest def test_send_http():">
@@ -408,7 +408,7 @@ if __name__ == &quot;__main__&quot;:
     pytest.main([&quot;-s&quot;,&quot;test_server.py&quot;,&quot;-m-webtest&quot;])
 </code></pre><p>cmd运行的时候加个参数-m</p>
 <pre><code>&gt; pytest -v -m webtest(不执行not webtest)
-</code></pre><p><strong>-v 指定的函数节点id</strong></p>
+</code></pre><p><strong>-v 指定的函数节点id：</strong></p>
 <p>如果想指定运行某个.py模块下，类里面的一个用例，如：TestClass里面 test 开头(戒_test 结尾)的用例，函数(戒方法)的名称就是用例的节点id，指定节点id运行用-v参数</p>
 <p>cmd：</p>
 <pre><code>&gt; pytest -v test_server.py::TestClass::test_method
@@ -422,7 +422,7 @@ if __name__ == &quot;__main__&quot;:
 </code></pre><p>pycharm：</p>
 <pre><code>if __name__ == &quot;__main__&quot;:
     pytest.main([&quot;-v&quot;, &quot;test_server.py::TestClass&quot;,  &quot;test_server.py::test_send_http&quot;])
-</code></pre><p><strong>-k 匹配用例名称</strong></p>
+</code></pre><p><strong>-k 匹配用例名称：</strong></p>
 <p>可以使用-k命令行选顷指定在匹配用例名称的表达式</p>
 <pre><code>&gt; pytest -v -k http
 </code></pre><p>也可以运行所有的测试，根据用例名称排除掉某些用例</p>
@@ -546,7 +546,7 @@ if __name__ == &quot;__main__&quot;:
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">38</span>
+                <span class="site-state-item-count">39</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

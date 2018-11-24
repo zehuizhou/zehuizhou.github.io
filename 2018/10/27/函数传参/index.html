@@ -94,7 +94,7 @@
 <meta property="og:url" content="http://yoursite.com/2018/10/27/函数传参/index.html">
 <meta property="og:site_name" content="一杯气质水">
 <meta property="og:description" content="前言： 为了提高代码的复用性，我们在写用例的时候，会用到函数，然后丌同的用例去调用返个函数。比如登录操作，大部分的用例都会先登录，那就需要把登录单独抽出来写个函数，其它用例全部的调用返个登录函数就行。但是登录的账号丌能写死，有时候我想用账号1去登录，执行用例1，用账号2去登录执行用例2，所以需要对函数传参。 登录函数传参： 把登录单独成立，写一个函数，传2个参数user和psw，写用例的时候调用登">
-<meta property="og:updated_time" content="2018-10-27T14:05:43.134Z">
+<meta property="og:updated_time" content="2018-11-24T11:57:50.233Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="函数传参">
 <meta name="twitter:description" content="前言： 为了提高代码的复用性，我们在写用例的时候，会用到函数，然后丌同的用例去调用返个函数。比如登录操作，大部分的用例都会先登录，那就需要把登录单独抽出来写个函数，其它用例全部的调用返个登录函数就行。但是登录的账号丌能写死，有时候我想用账号1去登录，执行用例1，用账号2去登录执行用例2，所以需要对函数传参。 登录函数传参： 把登录单独成立，写一个函数，传2个参数user和psw，写用例的时候调用登">
@@ -441,7 +441,7 @@ def test_login(login):
 if __name__ == &quot;__main__&quot;:
     pytest.main([&quot;-s&quot;, &quot;test_02.py&quot;])
 </code></pre><p>添加indirect=True参数是为了把login当成一个函数去执行，而不是一个参数</p>
-<p><strong>request传2个参数</strong></p>
+<p><strong>request传2个参数：</strong></p>
 <p>如果用到@pytest.fixture，里面用2个参数情况，可以把多个参数用一个字典去存储，返样最终还是只传一个参数<br>不同的参数再从字典里面取对应key值就行，如：user = request.param[“user”]</p>
 <pre><code># test_03.py
 # coding:utf-8
@@ -474,7 +474,7 @@ def test_login(login):
 if __name__ == &quot;__main__&quot;:
     pytest.main([&quot;-s&quot;, &quot;test_02.py&quot;])
 </code></pre><p>如果要用到login里面的返回值，def test_login(login)时，传入login参数，函数返回值就是login了</p>
-<p><strong>多个fixture</strong></p>
+<p><strong>多个fixture：</strong></p>
 <p>用例上面是可以同时放多个fixture的，也就是多个前置操作，可以支持装饰器叠加，使用parametrize装饰器叠加时，用例组合是2个参数个数相乘</p>
 <pre><code># test_04.py
 # coding:utf-8
@@ -623,7 +623,7 @@ if __name__ == &quot;__main__&quot;:
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">38</span>
+                <span class="site-state-item-count">39</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

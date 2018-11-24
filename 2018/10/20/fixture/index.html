@@ -94,7 +94,7 @@
 <meta property="og:url" content="http://yoursite.com/2018/10/20/fixture/index.html">
 <meta property="og:site_name" content="一杯气质水">
 <meta property="og:description" content="firture相对于setup和teardown来说应该有以下几点优势： 命名方式灵活，不局限于setup和teardown这几个命名 conftest.py配置里可以实现数据共享，不需要import就能自动找到一些配置 scope=”module” 可以实现多个.py 跨文件共享前置 scope=”session” 以实现多个.py 跨文件使用一个session来完成多个用例  fixture(">
-<meta property="og:updated_time" content="2018-10-22T13:21:59.390Z">
+<meta property="og:updated_time" content="2018-11-24T12:00:13.019Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="fixture">
 <meta name="twitter:description" content="firture相对于setup和teardown来说应该有以下几点优势： 命名方式灵活，不局限于setup和teardown这几个命名 conftest.py配置里可以实现数据共享，不需要import就能自动找到一些配置 scope=”module” 可以实现多个.py 跨文件共享前置 scope=”session” 以实现多个.py 跨文件使用一个session来完成多个用例  fixture(">
@@ -401,7 +401,7 @@
 <li>ids：每个字符串id的列表，每个字符串对应于params，这样他们就是测试ID的一部分。 如果没有提供ID它们将从params 自动生成</li>
 <li>name：fixture的名称。 返默讣为装饰函数的名称。 如果fixture 在定义它的同一模块中使用，夹具的功能名称将被请求夹具的功能arg遮蔽;解决返个问题的一种方法是将装饰函数命名</li>
 </ul>
-<h2 id="实现场景"><a href="#实现场景" class="headerlink" title="实现场景"></a>实现场景</h2><p>用例 1 需要先登录，用例 2 丌需要登录，用例 3 需要<br>先登录</p>
+<h2 id="实现场景："><a href="#实现场景：" class="headerlink" title="实现场景："></a>实现场景：</h2><p>用例 1 需要先登录，用例 2 丌需要登录，用例 3 需要<br>先登录</p>
 <pre><code>@pytest.fixture() 
 def login(): 
      print(&quot;输入账号，密码先登录&quot;) 
@@ -417,7 +417,7 @@ def test_s3(login):
 
 if __name__ == &quot;__main__&quot;: 
      pytest.main([&quot;-s&quot;, &quot;test_fix.py&quot;])
-</code></pre><h2 id="addfinalizer终结函数"><a href="#addfinalizer终结函数" class="headerlink" title="addfinalizer终结函数"></a>addfinalizer终结函数</h2><ul>
+</code></pre><h2 id="addfinalizer终结函数："><a href="#addfinalizer终结函数：" class="headerlink" title="addfinalizer终结函数："></a>addfinalizer终结函数：</h2><ul>
 <li>除了yield可以实现teardown,在request-context对象中注册addfinalizer方法也可以实现终结函数。</li>
 <li>yield和addfinalizer方法都是在测试完成后呼叫相应的代码。但是addfinalizer不同的是他可以注册多个终结函数。这些终结方法总是会被执行，无论在之前的setup code有没有抛出错误。这个方法对于正确关闭所有的fixture创建的资源非常便利，即使其一在创建或获取时失败.</li>
 </ul>
@@ -547,7 +547,7 @@ if __name__ == &quot;__main__&quot;:
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">38</span>
+                <span class="site-state-item-count">39</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -642,7 +642,7 @@ if __name__ == &quot;__main__&quot;:
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#firture相对于setup和teardown来说应该有以下几点优势："><span class="nav-number">1.</span> <span class="nav-text">firture相对于setup和teardown来说应该有以下几点优势：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fixture-scope-”function”-params-None-autouse-False-ids-None-name-None"><span class="nav-number">2.</span> <span class="nav-text">fixture(scope=”function”,params=None,autouse=False,ids=None,name=None):</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现场景"><span class="nav-number">3.</span> <span class="nav-text">实现场景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#addfinalizer终结函数"><span class="nav-number">4.</span> <span class="nav-text">addfinalizer终结函数</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#firture相对于setup和teardown来说应该有以下几点优势："><span class="nav-number">1.</span> <span class="nav-text">firture相对于setup和teardown来说应该有以下几点优势：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fixture-scope-”function”-params-None-autouse-False-ids-None-name-None"><span class="nav-number">2.</span> <span class="nav-text">fixture(scope=”function”,params=None,autouse=False,ids=None,name=None):</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现场景："><span class="nav-number">3.</span> <span class="nav-text">实现场景：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#addfinalizer终结函数："><span class="nav-number">4.</span> <span class="nav-text">addfinalizer终结函数：</span></a></li></ol></div>
             
 
           </div>

@@ -87,17 +87,17 @@
 
 
 
-<meta name="description" content="前言： 命令行参数是根据命令行选项将不同的值传递给测试函数，比如平常在cmd执行”pytest —html=report.html”,这里面的”—html=report.html“就是从命令行传入的参数对应的参数名称是html，参数值是report.html conftest配置参数 1.首先需要在conftest.py添加命令行选项,命令行传入参数”—cmdopt“, 用例如果需要用到从命令行传">
+<meta name="description" content="前言： 命令行参数是根据命令行选项将不同的值传递给测试函数，比如平常在cmd执行”pytest —html=report.html”,这里面的”—html=report.html“就是从命令行传入的参数对应的参数名称是html，参数值是report.html conftest配置参数： 1.首先需要在conftest.py添加命令行选项,命令行传入参数”—cmdopt“, 用例如果需要用到从命令行">
 <meta name="keywords" content="pytest">
 <meta property="og:type" content="article">
 <meta property="og:title" content="命令行参数">
 <meta property="og:url" content="http://yoursite.com/2018/10/30/命令行参数/index.html">
 <meta property="og:site_name" content="一杯气质水">
-<meta property="og:description" content="前言： 命令行参数是根据命令行选项将不同的值传递给测试函数，比如平常在cmd执行”pytest —html=report.html”,这里面的”—html=report.html“就是从命令行传入的参数对应的参数名称是html，参数值是report.html conftest配置参数 1.首先需要在conftest.py添加命令行选项,命令行传入参数”—cmdopt“, 用例如果需要用到从命令行传">
-<meta property="og:updated_time" content="2018-10-30T11:20:05.414Z">
+<meta property="og:description" content="前言： 命令行参数是根据命令行选项将不同的值传递给测试函数，比如平常在cmd执行”pytest —html=report.html”,这里面的”—html=report.html“就是从命令行传入的参数对应的参数名称是html，参数值是report.html conftest配置参数： 1.首先需要在conftest.py添加命令行选项,命令行传入参数”—cmdopt“, 用例如果需要用到从命令行">
+<meta property="og:updated_time" content="2018-11-24T11:59:22.244Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="命令行参数">
-<meta name="twitter:description" content="前言： 命令行参数是根据命令行选项将不同的值传递给测试函数，比如平常在cmd执行”pytest —html=report.html”,这里面的”—html=report.html“就是从命令行传入的参数对应的参数名称是html，参数值是report.html conftest配置参数 1.首先需要在conftest.py添加命令行选项,命令行传入参数”—cmdopt“, 用例如果需要用到从命令行传">
+<meta name="twitter:description" content="前言： 命令行参数是根据命令行选项将不同的值传递给测试函数，比如平常在cmd执行”pytest —html=report.html”,这里面的”—html=report.html“就是从命令行传入的参数对应的参数名称是html，参数值是report.html conftest配置参数： 1.首先需要在conftest.py添加命令行选项,命令行传入参数”—cmdopt“, 用例如果需要用到从命令行">
 
 
 
@@ -387,7 +387,7 @@
       
         <p><strong>前言：</strong></p>
 <p>命令行参数是根据命令行选项将不同的值传递给测试函数，比如平常在cmd执行”pytest —html=report.html”,这里面的”—html=report.html“就是从命令行传入的参数对应的参数名称是html，参数值是report.html</p>
-<p><strong>conftest配置参数</strong></p>
+<p><strong>conftest配置参数：</strong></p>
 <p>1.首先需要在conftest.py添加命令行选项,命令行传入参数”—cmdopt“, 用例如果需要用到从命令行传入的参数，就调用cmdopt函数：</p>
 <pre><code># content of conftest.py
 import pytest
@@ -415,7 +415,7 @@ def test_answer(cmdopt):
 
 if __name__ == &quot;__main__&quot;:
     pytest.main([&quot;-s&quot;, &quot;test_case1.py&quot;])
-</code></pre><p><strong>带参数启动</strong> </p>
+</code></pre><p><strong>带参数启动：</strong> </p>
 <p>1.如果不带参数执行，那么传默认的default=”type1”，接下来在命令行带上参数去执行</p>
 <pre><code>&gt; pytest -s test_sample.py --cmdopt=type2
 </code></pre><p>2.命令行传参数有两种写法，还有一种分成2个参数也可以的,参数和名称用空格隔开</p>
@@ -537,7 +537,7 @@ if __name__ == &quot;__main__&quot;:
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">38</span>
+                <span class="site-state-item-count">39</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
