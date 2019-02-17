@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="一杯气质水">
 <meta property="og:description" content="一切皆对象类：对象属性定义在方法内部类属性定义在类内部，方法外部 self：方法内部引用对象自身1.操作对象属性2.一个方法内部调用同一类的其他方法  init()方法：python会在每次创建对象时自动调用，因此，我们可以在init()方法内部来初始化对象属性 class Bird():     def __init__(self, sound):         self.sound = so">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-18T13:27:48.976Z">
+<meta property="og:updated_time" content="2019-02-17T05:20:22.454Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python进阶">
 <meta name="twitter:description" content="一切皆对象类：对象属性定义在方法内部类属性定义在类内部，方法外部 self：方法内部引用对象自身1.操作对象属性2.一个方法内部调用同一类的其他方法  init()方法：python会在每次创建对象时自动调用，因此，我们可以在init()方法内部来初始化对象属性 class Bird():     def __init__(self, sound):         self.sound = so">
@@ -400,17 +400,17 @@ summer = Bird(&quot;dudu&quot;)
 summer.chir()
 </code></pre><h2 id="闭包-：一个函数和他的环境变量合在一起，就构成了一个闭包"><a href="#闭包-：一个函数和他的环境变量合在一起，就构成了一个闭包" class="headerlink" title="闭包 ：一个函数和他的环境变量合在一起，就构成了一个闭包"></a>闭包 ：一个函数和他的环境变量合在一起，就构成了一个闭包</h2><p>1.提高代码的可复用性<br>2.减少函数参数  </p>
 <pre><code>def line_conf():
-b = 15
-    def line(x):
-    return 2*x + b
-b = 5
-return line
+    b = 15
+        def line(x):
+        return 2*x + b
+    b = 5
+    return line
 
 if __name__==&quot;__main__&quot;:
-my_line = line_conf()
-print(my_line.__closure__)
-print(my_line.__closure__[0].cell_contents)
-print(my_line(5))
+    my_line = line_conf()
+    print(my_line.__closure__)
+    print(my_line.__closure__[0].cell_contents)
+    print(my_line(5))
 打印出15，return line之前,b=5
 </code></pre><h2 id="装饰器-：可以对一个函数、方法或者类进行加工，定义功能拓展本身"><a href="#装饰器-：可以对一个函数、方法或者类进行加工，定义功能拓展本身" class="headerlink" title="装饰器 ：可以对一个函数、方法或者类进行加工，定义功能拓展本身"></a>装饰器 ：可以对一个函数、方法或者类进行加工，定义功能拓展本身</h2><p>例子：把time包来测量程序运行时间的功能做成一个装饰器，这个装饰器可以运行于其他函数，将显示函数的运行时间</p>
 <pre><code>import time
@@ -422,7 +422,7 @@ def decorator_timer(old_function):
         t2 = time.time()
         print(&quot;time:&quot;, t2-t1)
         return result
-return new_function
+    return new_function
 
 @decorator_timer
 def hello_world():
